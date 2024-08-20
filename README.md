@@ -1,7 +1,7 @@
-#Отчёт по проекту SPRING BOOT STARTER
-##Описание
+# Отчёт по проекту SPRING BOOT STARTER
+## Описание
 Это Spring Boot Starter, который предоставляет возможность логирования HTTP запросов в вашем приложении на базе Spring Boot.
-##Запуск приложения 
+## Запуск приложения 
 Для запуска приложения выполните команду
 ```
 mvn install
@@ -11,19 +11,19 @@ mvn spring-boot:run
 ```
 mvn test
 ```
-##Логирование 
+## Логирование 
 Приложение позволяет настаивать уровень логирования через файл `application.properties`
 Для проишите нужный вам уровень логирования. Пример
 ```
 http.logging.level=INFO
 ```
-##Примеры логов 
+## Примеры логов 
 ```
 2024-08-20T14:44:57.152+03:00  INFO 15572 --- [MY-SPRING-BOOT-STARTER] [           main] c.e.M.i.HttpLoggingInterceptor           : method = GET URI = /test headers = java.util.Collections$EmptyEnumeration@6f0a4e30
 2024-08-20T14:30:37.537+03:00  INFO 15041 --- [MY-SPRING-BOOT-STARTER] [           main] c.e.M.i.HttpLoggingInterceptor           : status = 200 duration = 4ms headers = []
 ```
 
-##Примеры тестов 
+## Примеры тестов 
 Тест на проверку работы класса LogService
 ```
 @Test
